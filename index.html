@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Lucas Silva | Portifólio</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#skills">Skills</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main id="inicio" class="perfil">
+        <img src="images/img.png" alt="perfil">
+
+        <h1>Lucas Silva De Lima</h1>
+        <p>Desenvolvedor Front-End</p>
+    </main>
+
+    <section id="sobre" class="sobre center">
+        <h1>Sobre mim</h1>
+        <br>
+        <p>Olá mundo, sou o Dev Lucas! Atualmente estou cursando faculdade de <b>Análise e Desenvolvimento de Sistemas</b> no instituto da Uniasselvi, sou formado em <b>Desenvolvimento Web</b> no instituto da DankiCode e também em <b>Inglês</b> nível avançado na Wizard. Sou apaixonado na área da tecnologia e meu objetivo é me tornar um desenvolvedor Full-Stack</p>
+        <br>
+        <p>Tenho experiência em projetos e desenvolvimentos web responsívos e contínuo sempre aprendendos coisas novas da área, tento colocar tudo o que aprendo em prática, melhorando em cada projeto que faço!</p>
+        <br>
+        <button id="btnRolar">Entrar em contato</button>
+    </section>
+
+    <h1 class="skills-title">Skills</h1>
+    <section id="skills" class="skills center">
+        <div class="div-cards">
+            <div class="card">
+                <img src="images/html.png" alt="html">
+                <h2>HTML</h2>
+            </div>
+
+            <div class="card">
+                <img src="images/css.png" alt="css">
+                <h2>CSS</h2>
+            </div>
+
+            <div class="card">
+                <img src="images/js.png" alt="js">
+                <h2>JAVASCRIPT</h2>
+            </div>
+
+            <div class="card">
+                <img src="images/jquery.png" alt="jquery">
+                <h2>JQUERY</h2>
+            </div>
+
+            <div class="card">
+                <img src="images/bootstrap.png" alt="bootstrap">
+                <h2>BOOTSTRAP</h2>
+            </div>
+
+            <div class="card">
+                <img src="images/node.png" alt="node">
+                <h2>NODEJS</h2>
+            </div>
+
+            <div class="card">
+                <img src="images/react.png" alt="react">
+                <h2>REACT</h2>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+    </section>
+
+
+    <section id="projetos" class="projetos">
+        <h1>Projetos</h1>
+
+        <div class="projetos">
+            <div class="projeto">
+                <img src="images/nextflix.png" alt="netflix">
+                <h3>Projeto | Clone Netflix</h3>
+                <p>Projeto feito com: HTML, CSS, JS, REACT, utilizando API de catalogo de filmes, responsivo para desktop e celular!</p>
+                <a href="https://github.com/olucazs/Projects" target="_blank">
+                    <img src="images/github (1).png" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-silva-de-lima-56a21b3b5/" target="_blank">
+                    <img src="images/linkedin (1).png" alt="linkedin">
+                </a>
+            </div>
+
+            <div class="projeto">
+                <img src="images/dashboard.png" alt="dashboard">
+                <h3>Projeto | Dashboard</h3>
+                <p>Pequeno projeto de dashboard, utilizando grid e flexbox, 100% responsivo.</p>
+                <a href="https://github.com/olucazs/Projects" target="_blank">
+                    <img src="images/github (1).png" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-silva-de-lima-56a21b3b5/" target="_blank">
+                    <img src="images/linkedin (1).png" alt="linkedin">
+                </a>
+            </div>
+
+            <div class="projeto">
+                <img src="images/loja.png" alt="loja">
+                <h3>Projeto | Loja online</h3>
+                <p>Projeto feito pra treinar UX/UI, design e responsividade</p>
+                <a href="https://github.com/olucazs/Projects" target="_blank">
+                    <img src="images/github (1).png" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-silva-de-lima-56a21b3b5/" target="_blank">
+                    <img src="images/linkedin (1).png" alt="linkedin">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h1>Contato</h1>
+        <br>
+        <p>Gostaria de conversar ou realizar um projeto? Me chame agora via whatsapp!</p>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div>
+                <input type="text" placeholder="Seu nome..." class="nome-form" id="nome" required> 
+            </div>
+
+            <div>
+                <textarea class="text-form" placeholder="Digite sua mensagem..." id="mensagem" required></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="btn-form">
+                    Enviar mensagem WhatsApp
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <div class="efeitos"></div>
+    <script src="index.js"></script>
+</body>
+</html>
