@@ -41,7 +41,6 @@ track.addEventListener('transitionend', () => {
     }
 });
 
-// transforma a lógica de avançar em função separada, pra reaproveitar
 function avancar() {
     index++;
     posicionar(true);
@@ -55,15 +54,12 @@ function voltar() {
 btnNext.addEventListener('click', avancar);
 btnPrev.addEventListener('click', voltar);
 
-// autoplay
-let autoplay = setInterval(avancar, 1000); // avança a cada 3 segundos
+let autoplay = setInterval(avancar, 1000);
 
-// pausa quando o mouse entra na área do carrossel
 container.addEventListener('mouseenter', () => {
     clearInterval(autoplay);
 });
 
-// retoma quando o mouse sai
 container.addEventListener('mouseleave', () => {
     autoplay = setInterval(avancar, 3000);
 });
